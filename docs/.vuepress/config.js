@@ -1,7 +1,9 @@
+const webpack = require('webpack')
+
 module.exports = {
     /* 基本配置 */
     title: 'Hello VuePress',
-    description: 'Just playing around',
+    description: 'Just playing around!',
     base: '/vuepresstest/',
     head: [
         ['link', {
@@ -76,7 +78,26 @@ module.exports = {
      * 为当前的主题提供一些配置，这些选项依赖于你正在使用的主题。
      * 
      */
-    themeConfig: {},
+    themeConfig: {
+      nav: [
+        { text: 'Home', link: '/' },
+        { text: 'Guide', link: '/guide/' },
+        { text: 'External', link: 'https://google.com' },
+        {
+          text: 'Languages',
+          items: [
+            { text: 'Chinese', link: '/language/chinese' },
+            { text: 'Japanese', link: '/language/japanese' },
+            { text: 'English', 
+              items: [ 
+                { text: 'UK', link: '/language/uk' },
+                { text: 'US', link: '/language/us' }
+               ] 
+            }
+          ]
+        }
+      ]
+    },
     /* Markdown */
     markdown: {
         lineNumbers: true,  // 代码块显示行号
@@ -160,7 +181,11 @@ module.exports = {
      *    }
      *  }
     */
-    configureWebpack: undefined,
+    configureWebpack: (config, isServer) => {
+      /* plugins: [
+          new webpack.HotModuleReplacementPlugin()
+      ] */
+    },
     /**
      * 通过 webpack-chain 来修改内部的 Webpack 配置
      * 
