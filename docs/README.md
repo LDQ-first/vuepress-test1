@@ -3,6 +3,7 @@ home: true
 heroImage: logo-chrome.png
 actionText: 快速上手 →
 actionLink: /next/
+# navbar: false  # 禁用某个指定页面的导航栏
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。

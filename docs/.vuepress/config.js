@@ -96,7 +96,9 @@ module.exports = {
             }
           ]
         }
-      ]
+      ],
+      // navbar: false,  // 禁用所有页面的导航栏  
+      
     },
     /* Markdown */
     markdown: {
