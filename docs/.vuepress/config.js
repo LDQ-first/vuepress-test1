@@ -2,14 +2,14 @@ module.exports = {
     /* 基本配置 */
     title: 'Hello VuePress',
     description: 'Just playing around',
-    base: '/vuepresstest',
+    base: '/vuepresstest/',
     head: [
         ['link', {
             rel: 'icon',
             href: './logo-chrome.png'
         }]
     ],
-    host: '0.0.0.0',
+    host: 'localhost',
     port: 8080,
     dest: '.vuepress/dist', // 指定 vuepress build 的输出目录。
     ga: undefined,   // 提供一个 Google Analytics ID 来使 GA 生效。

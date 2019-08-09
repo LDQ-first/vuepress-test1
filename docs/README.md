@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: .vuepress/logo-chrome.png
+heroImage: logo-chrome.png
 actionText: 快速上手 →
 actionLink: /next/
 features:

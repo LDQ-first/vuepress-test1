@@ -6,7 +6,7 @@
   "scripts": {
     "gitadd": "git add . && git commit -m 'modify'",
     "git": "npm run gitadd && git push origin master",
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --host localhost",
     "build": "vuepress build docs"
   },
   "repository": {
