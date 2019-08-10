@@ -2,6 +2,7 @@
 sidebar: auto
 # sidebarDepth: 0
 editLink: false
+pageClass: custom-page-class
 ---
 
 
