@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const path = require('path')
 
 const genNextSiderbarConfig = (title) => [
   {
@@ -12,6 +13,10 @@ const genNextSiderbarConfig = (title) => [
   }
 ]
 
+console.log(`process.cwd() + './docs/.vuepress/public'`, 
+             process.cwd() + './docs/.vuepress/public')
+console.log(`path.join(process.cwd() , 'docs/.vuepress/public')`, 
+             path.join(process.cwd() , 'docs/.vuepress/public'))
 
 module.exports = {
     /* 基本配置 */
@@ -288,11 +293,30 @@ module.exports = {
      *    }
      *  }
     */
+    /* configureWebpack: {
+      resolve: {
+        alias: {
+         '@public': path.join(process.cwd() , 'docs/.vuepress/public')
+        }
+      }
+    }, */
     configureWebpack: (config, isServer) => {
       /* plugins: [
           new webpack.HotModuleReplacementPlugin()
       ] */
-    },
+      /* config.resolve.alias = Object.assign({}, config.resolve.alias, {
+           '@public':  path.join(process.cwd() , 'docs/.vuepress/public')
+       }) */
+      
+      return {
+          resolve: {
+            alias: {
+              '@public': path.join(process.cwd() , 'docs/.vuepress/public')
+            }
+          }
+          
+      }
+      },
     /**
      * 通过 webpack-chain 来修改内部的 Webpack 配置
      * 

@@ -13,3 +13,15 @@ pageClass: custom-page-class
 ### h3
 
 #### h4
+
+
+![logo](~@public/logo-chrome.png)
+
+![logo](vuepresstest/~@public/logo-chrome.png)
+
+
+<img src="~@public/logo-chrome.png" alt="logo">
+
+<img src="vuepresstest/~@public/logo-chrome.png" alt="logo">
+
+<img :src="$withBase('~@public/logo-chrome.png')" alt="logo">

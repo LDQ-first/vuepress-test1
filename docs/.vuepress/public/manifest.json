@@ -1,0 +1,15 @@
+{
+  "name": "VuePress-test1",
+  "short_name": "VuePress-test1",
+  "icons": [
+    {
+      "src": "/icons/favicon 32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FFF",
+  "theme_color": "#3eaf7c"
+}
