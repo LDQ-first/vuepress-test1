@@ -29,3 +29,5 @@ footer: MIT Licensed | Copyright © 2019-present LDQ-first
 <img src="vuepresstest/logo-chrome.png" alt="logo">
 
 <img :src="$withBase('logo-chrome.png')" alt="logo">
+
+<<< @/docs/.vuepress/snippet.js{2}
