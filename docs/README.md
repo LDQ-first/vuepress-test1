@@ -1,4 +1,5 @@
 ---
+lang: zh-cn
 home: true
 heroImage: logo-chrome.png
 actionText: 快速上手 →

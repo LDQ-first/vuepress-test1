@@ -68,3 +68,37 @@ pageClass: custom-page-class
     font-size: 20px;
 }
 </style>
+
+
+<p class="demo" :class="$style.example"></p>
+
+<style module>
+.example {
+  color: #41b883;
+}
+</style>
+
+<script>
+export default {
+  mounted () {
+    document.querySelector(`.${this.$style.example}`)
+      .textContent = '这个块是被内联的脚本渲染的，样式也采用了内联样式。'
+  }
+}
+</script>
+
+<OutboundLink/>
+
+[vuepress](https://vuepress.vuejs.org/zh/)
+
+<ClientOnly>
+  <p>
+    ClientOnly
+  </p>
+</ClientOnly>
+
+
+<Badge text="beta" type="warn"/>
+<Badge text="0.10.1+"/>
+<Badge text="默认主题"/>
+
