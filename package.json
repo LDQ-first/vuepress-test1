@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gitadd": "git add . && git commit -m \"update vuepress\" ",
+    "gitadd": "git add . && git commit -m \"eject vuepress\" ",
     "git": "npm run gitadd && git push origin master",
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "eject": "vuepress eject"
   },
   "repository": {
     "type": "git",
