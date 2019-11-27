@@ -280,14 +280,15 @@ getHash
 
 
 isExternal
-
+判断路径存在协议部分（匹配 一个或多个小写字母开头加冒号）
 
 
 isMailto
-
+判断路径是否存在 mailto：开头
 
 
 isTel
+判断路径是否存在 tel：开头
 
 
 
