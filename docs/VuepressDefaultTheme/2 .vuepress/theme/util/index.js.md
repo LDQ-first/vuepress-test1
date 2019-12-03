@@ -293,11 +293,11 @@ isTel
 
 
 ensureExt
-
+处理后缀
 
 
 isActive
-
+判断页面是否激活
 
 
 resolvePage

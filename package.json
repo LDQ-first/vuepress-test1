@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gitadd": "git add . && git commit -m \"update and eject vuepress\" ",
+    "gitadd": "git add . && git commit -m \"update vuepress theme docs\" ",
     "git": "npm run gitadd && git push origin master",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
