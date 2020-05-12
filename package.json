@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gitadd": "git add . && git commit -m \"update devDependencies\" ",
+    "gitadd": "git add . && git commit -m \"update devDependencies and .vuepress\" ",
     "git": "npm run gitadd && git push origin master",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "eject": "vuepress eject"
+    "eject": "vuepress eject",
+    "deploy": "bash deploy.sh"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,9 @@
   },
   "homepage": "https://github.com/LDQ-first/vuepress-test1#readme",
   "devDependencies": {
+    "autoprefixer": "^9.7.6",
     "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0"
   }
 }
