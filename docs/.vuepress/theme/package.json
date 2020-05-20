@@ -1,0 +1,22 @@
+{
+  "name": "vuepress-test-theme1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gitadd": "git add . && git commit -m \"\" ",
+    "git": "npm run gitadd && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+  
+}

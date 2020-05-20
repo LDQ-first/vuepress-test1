@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style lang='sass'>
+<style lang='scss'>
 h1 {
   padding: 0;
   margin: 0;

@@ -286,6 +286,7 @@ module.exports = {
     },
     scss: {}, //加载 *.scss 文件的 sass-loader 的选项
     sass: { indentedSyntax: true }, // 加载 *.sass 文件的 sass-loader 的选项
+    //sass: {}, // 加载 *.sass 文件的 sass-loader 的选项
     less: {}, // less-loader 的选项
     /**
      * 用于修改内部的 Webpack 配置。
