@@ -17,12 +17,12 @@ pageClass: custom-page-class
 
 ![logo](~@public/logo-chrome.png)
 
-![logo](vuepresstest/~@public/logo-chrome.png)
+![logo](vuepress-test1/~@public/logo-chrome.png)
 
 
 <img src="~@public/logo-chrome.png" alt="logo">
 
-<img src="vuepresstest/~@public/logo-chrome.png" alt="logo">
+<img src="vuepress-test1/~@public/logo-chrome.png" alt="logo">
 
 <img :src="$withBase('~@public/logo-chrome.png')" alt="logo">
 

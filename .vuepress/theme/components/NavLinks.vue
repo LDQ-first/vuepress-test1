@@ -84,10 +84,16 @@ export default {
     },
 
     userLinks () {
+      console.log(`===  userLinks ===`)
+      console.log(`this: `, this)
+      console.log(`this.nav: `, this.nav)
       return (this.nav || []).map(link => {
-        return Object.assign(resolveNavLinkItem(link), {
+        console.log(`link: `, link)
+        let links = Object.assign(resolveNavLinkItem(link), {
           items: (link.items || []).map(resolveNavLinkItem)
         })
+        console.log(`links: `, links)
+        return links
       })
     },
 

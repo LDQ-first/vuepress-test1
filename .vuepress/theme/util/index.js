@@ -180,6 +180,8 @@ export function groupHeaders (headers) {
 }
 
 export function resolveNavLinkItem (linkItem) {
+  console.log(`===  resolveNavLinkItem ===`)
+  console.log(`linkItem:`, linkItem)
   return Object.assign(linkItem, {
     type: linkItem.items && linkItem.items.length ? 'links' : 'link'
   })

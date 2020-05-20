@@ -22,7 +22,7 @@ module.exports = {
     /* 基本配置 */
     title: 'Hello VuePress',
     description: 'Just playing around!',
-    base: '/vuepresstest/',
+    base: '/vuepress-test1/',
     head: [
         ['link', {
             rel: 'icon',
@@ -99,7 +99,13 @@ module.exports = {
     themeConfig: {
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Guide', link: '/guide/' },
+        { 
+          text: 'Guide', 
+          items: [
+            { text: 'guide', link:'/guide/'},
+            { text: '1', link:'/guide/1'}
+          ]
+         },
         { text: 'External', link: 'https://google.com' },
         {
           text: 'Languages',
@@ -117,9 +123,10 @@ module.exports = {
       ],
       // navbar: false,  // 禁用所有页面的导航栏  
       /* 侧边栏 */
-      sidebar: {
+      /* sidebar: {
         '/next/': genNextSiderbarConfig('next'),
-      },
+      }, */
+      sidebar: 'auto',
       
       /* 显示所有页面的标题链接 */
       displayAllHeaders: true,   // 默认值：false
